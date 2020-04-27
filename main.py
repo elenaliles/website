@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -27,5 +27,3 @@ def blog():
 
 if __name__ == "__main__":
     app.run(debug=True)
-    # @app.route("/about.html")
-    # @app.route("/home.html")
