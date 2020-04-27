@@ -1,8 +1,6 @@
-from flask import Flask, render_template
-# https://www.freecodecamp.org/news/how-to-build-a-web-application-using-flask-and-deploy-it-to-the-cloud-3551c985e492/
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
-
 
 @app.route("/")
 @app.route('/home.html')
@@ -14,5 +12,20 @@ def home():
 def about():
     return render_template('about.html')
 
+
+@app.route("/contact.html")
+def contact():
+    return render_template('contact.html')
+
+@app.route("/hire.html")
+def hire():
+    return render_template('hire.html')
+
+@app.route("/blog.html")
+def blog():
+    return render_template('blog.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
+    # @app.route("/about.html")
+    # @app.route("/home.html")
