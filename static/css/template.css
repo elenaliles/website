@@ -25,19 +25,18 @@ p {
   width: 98vw;
   height: 6vh;
   color: #white;
-  align-items: center;
 }
-/*align-items: center;*/
+
 .logo {
   font-size: 5vh;
   color: #EEF0F2;
   font-family: 'Roboto Slab', serif;
-  padding: 0.5vw;
+  padding: 0.5vh;
+  align-self: center;
 }
 .menu {
-  /*font-size: 2vh;*/
   margin-left: auto;
-  align-items: center;
+  align-self: center;
 }
 .menu ul {
     background-color: #011638;
@@ -45,12 +44,13 @@ p {
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center;
+    align-items: center; /*keeps list items centered*/
 
 }
 
 button{
   display: none;
+  background-color: #EEC643;
 }
 
 .menu li {
@@ -63,7 +63,6 @@ button{
   text-decoration: none;
   color: white;
   padding: 1vw;
-/*  font-family: monospace;*/
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -71,34 +70,41 @@ button{
   color: #EEC643;
 }
 
-@media only screen and (max-width: 500px) {
-  /*shows elements in a column*/
-  .menu ul{
-    flex-direction: column;
-  }
+@media only screen and (max-width: 770px) {
+    .menu{
+        align-self: auto;
+        vertical-align: top;
+    }
 
-  /* deletes margin on top or bottom of the a tag*/
-  .menu li{
-    margin: 0;
-  }
- /* makes sure that the a tag will take the entire screen*/
-  .menu a{
-    display: block;
-  }
+    /*shows elements in a column*/
 
-   button{
-    /*makes the button visible*/
-    display: block;
+    .menu ul{
+        flex-direction: column;
+    }
 
-    /*since we are here, we can style it a little bit!*/
-    padding: 2vw;
-    font-size: 3vh;
-    background-color: #AFE0FF;
-    border: none;
+    /* deletes margin on top or bottom of the a tag*/
+    .menu li{
+        margin: 0;
+    }
+    /* makes sure that the a tag will take the entire screen*/
+    .menu a{
+        display: block;
+        padding: 1vh;
+    }
 
-    /*outline none removes the default blue border that appears anytime you click on the button*/
-    outline: none;
+    button{
+        /*makes the button visible*/
+        display: block;
 
-    cursor: pointer;
-  }
+        /*since we are here, we can style it a little bit!*/
+        font-size: 4.5vh;
+        font-family: 'Roboto Slab', serif;
+        padding: 0;
+        border: none;
+
+        /*outline none removes the default blue border that appears anytime you click on the button*/
+        outline: none;
+        cursor: pointer;
+        background-color: #EEC643;
+    }
 }
