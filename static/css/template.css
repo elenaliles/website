@@ -11,20 +11,24 @@ body {
 h1 {
     font-family: 'Roboto Mono', monospace;
     font-size: 3vh;
-    color: #0D21A1;
+    color: #EEC643;
 }
 
 p {
     font-family: 'Roboto', serif;
-    color = #141414;
+    color: #141414;
 }
 
+.container{
+    margin-right: 15vw;
+    margin-left: 15vw;
+}
 .topnav {
   display: flex;
   background-color: #011638;
-  width: 98vw;
+  width: 70vw;
   height: 6vh;
-  color: #white;
+  color: white;
 }
 
 .logo {
@@ -55,7 +59,7 @@ button{
 
 .menu li {
     list-style-type: none;
-    margin: 0 2vw;
+    margin: 0.1vw;
     font-size: 2vh;
 }
 
@@ -71,6 +75,14 @@ button{
 }
 
 @media only screen and (max-width: 770px) {
+    /*Set the top bar to take up whole screen */
+    .container{
+    margin-right: 0;
+    margin-left: 0;
+    }
+    .topnav{
+          width: 100vw;
+    }
     .menu{
         align-self: auto;
         vertical-align: top;

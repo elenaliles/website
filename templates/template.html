@@ -9,20 +9,21 @@
   </head>
 
   <body>
-  <div class="topnav">
-  <div class="logo"> Elena Arielle Liles</div>
-  <div class="menu">
-    <button> 🞬 </button><ul>
-    <li><a href="{{ url_for('home') }}">Home</a></li>
-    <li><a href="{{ url_for('about') }}">About</a></li>
-    <li><a href="{{ url_for('blog') }}">Blog</a></li>
-    <li><a href="{{ url_for('hire') }}">CV</a></li>
-    <li><a href="{{ url_for('contact') }}">Contact</a></li>
-  </ul></div>
+  <div class ="container">
+    <div class="topnav">
+      <div class="logo"> Elena Liles</div>
+      <div class="menu">
+        <button> 🞬 </button><ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('blog') }}">Blog</a></li>
+        <li><a href="{{ url_for('hire') }}">CV</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      </ul></div>
+    </div>
+  {% block content %}
+  {% endblock %}
   </div>
-
-{% block content %}
-{% endblock %}
 
  </body>
 
