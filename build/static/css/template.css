@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', serif;
+}
+
+body {
+  background-color: #EEF0F2;
+  font-family: 'Roboto', serif;
+}
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 3vh;
+    color: #0D21A1;
+}
+
+p {
+    font-family: 'Roboto', serif;
+    color = #141414;
+}
+
+.topnav {
+  display: flex;
+  background-color: #011638;
+  width: 98vw;
+  height: 6vh;
+  color: #white;
+  align-items: center;
+}
+/*align-items: center;*/
+.logo {
+  font-size: 5vh;
+  color: #EEF0F2;
+  font-family: 'Roboto Slab', serif;
+  padding: 0.5vw;
+}
+.menu {
+  /*font-size: 2vh;*/
+  margin-left: auto;
+  align-items: center;
+}
+.menu ul {
+    background-color: #011638;
+    font-size: 5vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+button{
+  display: none;
+}
+
+.menu li {
+    list-style-type: none;
+    margin: 0 2vw;
+    font-size: 2vh;
+}
+
+.menu a{
+  text-decoration: none;
+  color: white;
+  padding: 1vw;
+/*  font-family: monospace;*/
+  font-family: 'Roboto Mono', monospace;
+}
+
+.menu a:hover{
+  color: #EEC643;
+}
+
+@media only screen and (max-width: 500px) {
+  /*shows elements in a column*/
+  .menu ul{
+    flex-direction: column;
+  }
+
+  /* deletes margin on top or bottom of the a tag*/
+  .menu li{
+    margin: 0;
+  }
+ /* makes sure that the a tag will take the entire screen*/
+  .menu a{
+    display: block;
+  }
+
+   button{
+    /*makes the button visible*/
+    display: block;
+
+    /*since we are here, we can style it a little bit!*/
+    padding: 2vw;
+    font-size: 3vh;
+    background-color: #AFE0FF;
+    border: none;
+
+    /*outline none removes the default blue border that appears anytime you click on the button*/
+    outline: none;
+
+    cursor: pointer;
+  }
+}
