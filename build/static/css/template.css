@@ -16,7 +16,7 @@ h1 {
 
 p {
     font-family: 'Roboto', serif;
-    color = #141414;
+    color : #141414;
 }
 
 .topnav {
@@ -24,7 +24,7 @@ p {
   background-color: #011638;
   width: 98vw;
   height: 6vh;
-  color: #white;
+  color:  white;
   align-items: center;
 }
 /*align-items: center;*/
