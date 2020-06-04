@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_file
 
 app = Flask(__name__)
 
@@ -24,6 +24,13 @@ def hire():
 @app.route("/blog.html")
 def blog():
     return render_template('blog.html')
+
+@app.route('/return-files/')
+def return_files_tut():
+    try:
+        return send_file('files/liles_cv_2020.pdf', attachment_filename='liles.pdf')
+    except Exception as e:
+        return str(e)
 
 if __name__ == "__main__":
     app.run(debug=True)
