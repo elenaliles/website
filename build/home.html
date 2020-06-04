@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+  </head>
+  <body>
+
+    <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Template</title>
+      <link rel="stylesheet" href="/static/css/template.css">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@300&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+  <div class="topnav">
+  <div class="logo"> Elena Arielle Liles</div>
+  <div class="menu">
+    <button> 🞬 </button><ul>
+    <li><a href="/home.html">Home</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/blog.html">Blog</a></li>
+    <li><a href="/hire.html">CV</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+  </ul></div>
+  </div>
+
+
+
+    <h1>Hi</h1>
+    <p>Here's all my info test</p>
+
+
+    
+
+ </body>
+
+<script type="text/javascript">
+  /* only execute this script when the document is ready */
+  $(document).ready(function(){
+    /* function called when you click of the button */
+    $("button").click(function(){
+        if($("button").text() == "☰"){
+         $("button").text("🞬");
+        }else{
+          $("button").text("☰");
+        }
+        $("li").toggle("slow");
+    });
+  });
+</script>
+</html>
